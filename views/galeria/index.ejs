@@ -1,0 +1,30 @@
+<%- include('./partials/header.ejs') ;%>
+
+
+
+<body class="h-100 d-flex flex-column">
+    <%- include('./partials/nav'); %>
+    <div id="alertBanner" class="alert alert-warning alert-dismissible fade" role="alert">
+        <span id="bannerMessage"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>      
+    <div class="container-fluid py-5 px-md-5 col">
+        <header class="d-flex align-items-center justify-content-between">
+            <a class="btn btn-primary" href="/crear">Agregar Nueva Imagen</a>
+        </header>
+        <main class="col h-100">
+            <p>imagen local</p>
+            <section class="row" id="galeriaLocal">                
+                
+            </section>
+            <p>imagen cloudinary </p>
+            <section class="row mt-5" id="galeriaRemota">                
+                
+            </section>
+        </main>
+    </div>
+    <%- include('./partials/footer'); %>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
